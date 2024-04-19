@@ -1,0 +1,17 @@
+{
+  "name": "qa-automation-challenge",
+  "version": "1.0.0",
+  "description": "Automation test project for a website using Playwright and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test.auth": "npx playwright test authenticationTest.spec.ts",
+    "test.h.auth": "npx playwright test authenticationTest.spec.ts --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7"
+  }
+}

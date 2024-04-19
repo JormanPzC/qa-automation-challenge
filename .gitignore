@@ -92,5 +92,7 @@ out
 playwright-report/
 test-results/
 recordings/
-
-
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
