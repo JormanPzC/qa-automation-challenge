@@ -11,10 +11,10 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-	this.emailInputLocator = page.locator('input[name="email"]');
-	this.passwordInputLocator = page.locator('input[name="password"]');
-	this.forgotPasswordLinkTextLocator = page.getByRole('link', { name: 'Forgot Password?' });
-	this.loginButtonLocator = page.getByRole('button', { name: 'Login' });
+	  this.emailInputLocator = page.locator('input[name="email"]');
+	  this.passwordInputLocator = page.locator('input[name="password"]');
+	  this.forgotPasswordLinkTextLocator = page.getByRole('link', { name: 'Forgot Password?' });
+	  this.loginButtonLocator = page.getByRole('button', { name: 'Login' });
   }
 
 /**
@@ -43,15 +43,15 @@ export class LoginPage {
   /**
    * Click to the "Forgot Password?" link text.
    */
-  async clickForgotPasswordLinkText(){
-	await this.forgotPasswordLinkTextLocator.click();
+  async clickForgotPasswordLinkText() {
+	  await this.forgotPasswordLinkTextLocator.click();
   }
 
   /**
    * Click to the login button.
    */
-  async clickLoginButton(){
-	await this.loginButtonLocator.click();
+  async clickLoginButton() {
+	  await this.loginButtonLocator.click();
   }
 
 }

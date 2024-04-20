@@ -6,11 +6,9 @@ This is an automation test project for a website focused on the management of in
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Launch](#launch)
-* [Other Recommended Commands](#other-recomended-commands)
 * [Reporter Screenshots](#reporter-screenshots)
 * [Report of all test](#all-test-report)
 * [Detail of one test](#detail-test-report)
-* [Project Status](#project-status)
 
 
 ## General Info
@@ -43,3 +41,12 @@ Once the dependencies are installed, you can run some of these commands:
 
 - `npm run test.auth`: it is used to run the "npx playwright test authenticationTest.spec.ts" command (this is configured in package.json file), which will execute all the tests described in the *authenticationTest.spec.ts* file in the Chrome, Firefox and Webkit browsers.
 - `npm run test.h.auth`: it is used to run the "npx playwright test authenticationTest.spec.ts --project chromium --headed" command (this is configured in package.json file), which will execute all the tests described in the *authenticationTest.spec.ts* file in the Chrome browser in head mode.
+
+## Reporter Screenshots
+After running the test a HTML report will be generated, to see it run the command `npx playwright show-report` or `npm run report` . Here are some screenshots of the report:
+
+### Report of all test
+![Report of all test](images/html-report.png)
+
+### Detail of one test
+![Detail of one test](images/html-report-test-detail.png)

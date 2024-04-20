@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test.auth": "npx playwright test authenticationTest.spec.ts",
-    "test.h.auth": "npx playwright test authenticationTest.spec.ts --project chromium --headed"
+    "test.h.auth": "npx playwright test authenticationTest.spec.ts --project chromium --headed",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
