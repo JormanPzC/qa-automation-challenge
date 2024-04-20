@@ -12,18 +12,18 @@ export class NavbarAndSideMenu {
   readonly logoutOptionFromProfilePictureLocator: Locator;
 
   //Side menu elements
-  readonly dashboardLocator: Locator;
-  readonly customersLocator: Locator;
-  readonly itemsLocator: Locator;
-  readonly estimatesLocator: Locator;
-  readonly invoicesLocator: Locator;
-  readonly recurringInvoicesLocator: Locator;
-  readonly paymentsLocator: Locator;
-  readonly expensesLocator: Locator;
-  readonly modulesLocator: Locator;
-  readonly usersLocator: Locator;
-  readonly reportsLocator: Locator;
-  readonly settingsLocator: Locator;
+  readonly smDashboardLocator: Locator;
+  readonly smCustomersLocator: Locator;
+  readonly smItemsLocator: Locator;
+  readonly smEstimatesLocator: Locator;
+  readonly smInvoicesLocator: Locator;
+  readonly smRecurringInvoicesLocator: Locator;
+  readonly smPaymentsLocator: Locator;
+  readonly smExpensesLocator: Locator;
+  readonly smModulesLocator: Locator;
+  readonly smUsersLocator: Locator;
+  readonly smReportsLocator: Locator;
+  readonly smSettingsLocator: Locator;
 
 
   constructor(page: Page) {
@@ -37,22 +37,22 @@ export class NavbarAndSideMenu {
     this.logoutOptionFromProfilePictureLocator = page.getByRole('menuitem', { name: 'Logout' });
 
     //Side menu elements
-    this.dashboardLocator = page.getByRole('link', { name: 'Dashboard' });
-    this.customersLocator = page.getByRole('link', { name: 'Customers' }).first()
-    this.itemsLocator = page.getByRole('link', { name: 'Items' }).first()
-    this.estimatesLocator = page.getByRole('link', { name: 'Estimates' }).first();
-    this.invoicesLocator = page.getByRole('link', { name: 'Invoices' }).first()
-    this.recurringInvoicesLocator = page.getByRole('link', { name: 'Recurring Invoices' });
-    this.paymentsLocator = page.getByRole('link', { name: 'Payments' }).first();
-    this.expensesLocator = page.getByRole('link', { name: 'Expenses' }).first();
-    this.modulesLocator = page.getByRole('link', { name: 'Modules' }).first();
-    this.usersLocator = page.getByRole('link', { name: 'Users' }).first();
-    this.reportsLocator = page.getByRole('link', { name: 'Reports' }).first();
-    this.settingsLocator = page.getByRole('link', { name: 'Settings' }).first();
+    this.smDashboardLocator = page.getByRole('link', { name: 'Dashboard' });
+    this.smCustomersLocator = page.getByRole('link', { name: 'Customers' }).first()
+    this.smItemsLocator = page.getByRole('link', { name: 'Items' }).first()
+    this.smEstimatesLocator = page.getByRole('link', { name: 'Estimates' }).first();
+    this.smInvoicesLocator = page.getByRole('link', { name: 'Invoices' }).first()
+    this.smRecurringInvoicesLocator = page.getByRole('link', { name: 'Recurring Invoices' });
+    this.smPaymentsLocator = page.getByRole('link', { name: 'Payments' }).first();
+    this.smExpensesLocator = page.getByRole('link', { name: 'Expenses' }).first();
+    this.smModulesLocator = page.getByRole('link', { name: 'Modules' }).first();
+    this.smUsersLocator = page.getByRole('link', { name: 'Users' }).first();
+    this.smReportsLocator = page.getByRole('link', { name: 'Reports' }).first();
+    this.smSettingsLocator = page.getByRole('link', { name: 'Settings' }).first();
   }
 
   /**
-   * fill the search bar from the navbar..
+   * fill the search bar from the navbar.
    */
   async fillSearchBar(text: string){
     await this.searchBarLocator.fill(text);

@@ -2,6 +2,7 @@
 
 ## Table of contents
 * [Test case TC-001 - Login](#TC-001)
+* [Test case TC-002 - Logout](#TC-002)
 
 * * *
 
@@ -36,7 +37,7 @@ Login successful in the website.
 | <!-- -->  | <!-- -->         | <!-- -->   | <!-- -->    |
 |:---------:|:----------------:|:----------:|:-----------:|
 | **Title** | **Type of test** | **Priority**| **Technology** |
-| Login     | Acceptance       | High        |      Web       |
+| Logout     | Acceptance       | High        |      Web       |
 
 * * *
 
@@ -44,7 +45,7 @@ Login successful in the website.
 Logout from the website.
 
 ### Pre-conditions
-1. The user is already log in in the website.
+1. The user is already logged in the website.
 
 ### Steps
 1. In the nav bar click the user profile picture. 
